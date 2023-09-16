@@ -105,7 +105,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding: 15px;
-  border: 2px solid rgb(228, 190, 0);
+  border: 2px solid rgb(233, 4, 253);
   margin-top: 15px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -113,7 +113,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: rgb(228, 190, 0);
+  color: rgb(233, 4, 253);
 }
 
 .remove-btn {

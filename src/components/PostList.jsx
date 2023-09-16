@@ -1,6 +1,7 @@
 import React from "react";
 import PostItem from "./PostItem";
 import { TransitionGroup, CSSTransition} from "react-transition-group";
+import axios from "axios";
 
 const PostList = ({ posts, title, remove }) => {
   const removePost = (post) => {
@@ -8,14 +9,14 @@ const PostList = ({ posts, title, remove }) => {
   };
   if (!posts.length) {
     return (
-      <h1 style={{ color: "rgb(228, 190, 0)", textAlign: "center" }}>
+      <h1 style={{ color: "rgb(233, 4, 253)", textAlign: "center" }}>
         Task not found
       </h1>
     );
   }
   return (
     <div>
-      <h1 style={{ textAlign: "center", color: "rgb(228, 190, 0)" }}>
+      <h1 style={{ textAlign: "center", color: "rgb(233, 4, 253)" }}>
         {title}
       </h1>
       <TransitionGroup>
