@@ -132,3 +132,22 @@ body{
   transform: translateX(-350px);
   transition: all 500ms ease-in;
 }
+
+.page__wrapper{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.page{
+  padding: 10px 20px 10px 20px;
+  border: 1px solid $text-color;
+  color: $text-color;
+  cursor: pointer;
+}
+
+.page__current{
+  border: 2px solid yellow;
+  font-weight: bold;
+  color: yellow;
+}

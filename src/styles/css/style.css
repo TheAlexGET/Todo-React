@@ -142,3 +142,25 @@ body {
   -webkit-transition: all 500ms ease-in;
   transition: all 500ms ease-in;
 }
+
+.page__wrapper {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.page {
+  padding: 10px 20px 10px 20px;
+  border: 1px solid rgb(233, 4, 253);
+  color: rgb(233, 4, 253);
+  cursor: pointer;
+}
+
+.page__current {
+  border: 2px solid yellow;
+  font-weight: bold;
+  color: yellow;
+}
