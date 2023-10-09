@@ -90,6 +90,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -98,6 +105,10 @@ body {
 .App {
   padding-top: 5%;
   width: 800px;
+}
+
+h1 {
+  color: rgb(233, 4, 253);
 }
 
 .post {
@@ -163,4 +174,27 @@ body {
   border: 2px solid yellow;
   font-weight: bold;
   color: yellow;
+}
+
+.navbar {
+  height: 50px;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px;
+  background-color: rgb(46, 45, 45);
+}
+
+.navbar__links {
+  margin-left: 70%;
+}
+
+.navbar__links__option {
+  font-size: x-large;
+  color: rgb(233, 4, 253);
+  margin: 0 10px;
 }

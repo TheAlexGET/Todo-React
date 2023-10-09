@@ -98,12 +98,19 @@ body{
 }
 #root{
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 .App{
   padding-top: 5%;
   width: 800px;
 }
+
+h1{
+  color: $text-color;
+}
+
 .post{
   display: flex;
   padding: 15px;
@@ -150,4 +157,23 @@ body{
   border: 2px solid yellow;
   font-weight: bold;
   color: yellow;
+}
+
+.navbar{
+  height: 50px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  background-color: rgb(46, 45, 45);
+}
+
+.navbar__links{
+  margin-left: 70%;
+}
+
+.navbar__links__option{
+  font-size: x-large;
+  color: $text-color;
+  margin: 0 10px;
 }

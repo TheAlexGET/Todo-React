@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
-import PostService from "./API/PostService";
-import PostFilter from "./components/PostFilter";
-import PostForm from "./components/PostForm";
-import PostList from "./components/PostList";
-import Loader from "./components/UI/Loader/Loader";
-import MyModal from "./components/UI/MyModal/MyModal";
-import MyButton from "./components/UI/button/MyButton";
-import Pagination from "./components/UI/pagination/Pagination";
-import { useFetching } from "./hooks/useFetching";
-import { usePost } from "./hooks/usePost";
-import "./styles/css/style.css";
-import { getPageCount } from "./utils/pages";
+import PostService from "../API/PostService";
+import PostFilter from "../components/PostFilter";
+import PostForm from "../components/PostForm";
+import PostList from "../components/PostList";
+import Loader from "../components/UI/Loader/Loader";
+import MyModal from "../components/UI/MyModal/MyModal";
+import MyButton from "../components/UI/button/MyButton";
+import Pagination from "../components/UI/pagination/Pagination";
+import { useFetching } from "../hooks/useFetching";
+import { usePost } from "../hooks/usePost";
+import { getPageCount } from "../utils/pages";
+import '../styles/css/style.css'
 
 function Posts() {
   const [posts, setPosts] = useState([
@@ -45,7 +45,6 @@ function Posts() {
 
   return (
     <div className="App">
-      {/* <MyButton onClick={fetchPosts}>GET POSTS</MyButton> */}
       <MyButton onClick={() => setModal(true)}>Open Post Maker</MyButton>
       <MyModal visible={modal} setVisible={setModal}>
         <PostForm create={createPost} />
