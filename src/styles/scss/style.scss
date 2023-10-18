@@ -121,6 +121,10 @@ h1{
   color: $text-color;
 }
 
+.post__btns{
+  display: flex;
+}
+
 .remove-btn {
   margin-right: 0.5rem;
 }
@@ -176,4 +180,22 @@ h1{
   font-size: x-large;
   color: $text-color;
   margin: 0 10px;
+}
+
+.post-title{
+  font-size: x-large;
+  color: $text-color;
+}
+
+.comment-title{
+  font-size: larger;
+  color: $text-color;
+}
+
+.comment-body{
+  font-size: large;
+  color: $text-color;
+}
+.comment-email{
+  color: $text-color;
 }

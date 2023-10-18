@@ -127,6 +127,12 @@ h1 {
   color: rgb(233, 4, 253);
 }
 
+.post__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .remove-btn {
   margin-right: 0.5rem;
 }
@@ -197,4 +203,23 @@ h1 {
   font-size: x-large;
   color: rgb(233, 4, 253);
   margin: 0 10px;
+}
+
+.post-title {
+  font-size: x-large;
+  color: rgb(233, 4, 253);
+}
+
+.comment-title {
+  font-size: larger;
+  color: rgb(233, 4, 253);
+}
+
+.comment-body {
+  font-size: large;
+  color: rgb(233, 4, 253);
+}
+
+.comment-email {
+  color: rgb(233, 4, 253);
 }
