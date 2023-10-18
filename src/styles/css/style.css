@@ -223,3 +223,9 @@ h1 {
 .comment-email {
   color: rgb(233, 4, 253);
 }
+
+.login_btn {
+  text-decoration: none;
+  font-size: larger;
+  color: rgb(233, 4, 253);
+}
