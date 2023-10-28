@@ -74,7 +74,7 @@ function Posts() {
         title="List"
         remove={removePost}
       ></PostList>
-      <div ref={lastElement} style={{height: '20px', background: 'red'}}></div>
+      <div ref={lastElement} style={{}}></div>
       {isPostsLoading && (
         <div
           style={{
@@ -86,7 +86,7 @@ function Posts() {
           <Loader></Loader>
         </div>
       )}
-      <Pagination totalPages={totalPages} page={page} setPage={setPage} />
+      
     </div>
   );
 }

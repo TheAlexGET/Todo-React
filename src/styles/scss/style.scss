@@ -121,8 +121,14 @@ h1{
   color: $text-color;
 }
 
+.post__content{
+  width: 85%;
+}
+
 .post__btns{
+  width: 20%;
   display: flex;
+  justify-content: space-between;
 }
 
 .remove-btn {
@@ -166,14 +172,20 @@ h1{
 .navbar{
   height: 50px;
   width: 100vw;
+  padding: 0;
   display: flex;
-  align-items: center;
-  padding: 0 15px;
+  justify-content: center;
   background-color: rgb(46, 45, 45);
 }
 
+.navbar__blocks{
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .navbar__links{
-  margin-left: 70%;
+  margin-left: 0vw;
 }
 
 .navbar__links__option{
@@ -200,8 +212,45 @@ h1{
   color: $text-color;
 }
 
-.login_btn{
+.log_btn{
   text-decoration: none;
   font-size: larger;
   color: $text-color;
 }
+
+@media (max-width: 848px){
+  .App{
+    padding-top: 5%;
+    width: 90%;
+  }
+  .navbar{
+    height: 50px;
+    width: 100vw;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(46, 45, 45);
+  }
+
+  .navbar__blocks{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar__links{
+    margin-left: 0vw;
+  }
+  
+  .navbar__links__option{
+    font-size: x-large;
+    color: $text-color;
+    margin: 0 10px;
+  }
+
+  .post__btns{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+  }
+}  

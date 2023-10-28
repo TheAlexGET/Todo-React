@@ -5,4 +5,6 @@
     background: transparent;
     border: 1px solid rgb(233, 4, 253);
     cursor: pointer;
+    text-decoration: none;
+    text-align: center;
 }
