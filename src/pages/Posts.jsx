@@ -33,12 +33,14 @@ function Posts() {
 
   useObserver(lastElement, page < totalPages, isPostsLoading, () => {setPage(page + 1)})
 
+
+  //if we want to fetch posts from web
   useEffect(() => {
-    fetchPosts();
+    //fetchPosts();
   }, [page, limit]);
 
   const createPost = (newPost) => {
-    newPost.id = posts.length
+    newPost.id = Date.now()
     setPosts([...posts, newPost]);
     setModal(false);
   };
